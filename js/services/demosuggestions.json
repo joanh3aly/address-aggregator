@@ -1,0 +1,20 @@
+{
+   "one": {
+      "title": "a",
+      "beds": 9,
+      "price": 0,
+      "area": 2
+   },
+   "two": {
+      "title": "b",
+      "beds": 7,
+      "price": 15,
+      "area": 2
+   },
+   "three": {
+      "title": "c",
+      "beds": 7,
+      "price": 15,
+      "area": 15
+   }
+}
