@@ -1,0 +1,40 @@
+<h1> {{ heading }} </h1>
+
+<!--
+  Display map 
+-->
+<div id="map"></div>
+
+<!--
+  Display markers on map
+-->
+<!--
+<div id="repeat" ng-repeat="marker in markers | orderBy : 'beds'"> 
+    <a id="country_container" href="#" ng-click="openInfoWindow($event, marker)" label id="names" >{{marker.beds}}</label></a>
+</div>
+-->
+
+<!--
+	Display houses in a table from Firebase 
+-->	
+<div >
+    <table style="width:60%">
+   		<thead>
+        <tr>
+        	<th>Address:</th>
+        	<th>Bedrooms:</th>
+        	<th>Price:</th>
+        </tr>
+        </thead>
+        <tbody ng-repeat="item in chosenArea">
+        	<tr>
+            	<td>{{item.address}}</td>
+          		<td>{{item.beds}}</td>
+            	<td>{{item.price}}</td>
+            </tr>
+       	</tbody>
+    </table>       
+</div>
+
+
+
