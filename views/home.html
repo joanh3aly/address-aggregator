@@ -1,33 +1,17 @@
-<h1> {{ helloWorld }} </h1>
-
-<!--
-	Input address data to suggestions.js via controller - not using anymore
--->
-<!--
-<form ng-submit="addSuggestion()" style="margin-top: 50px">
-	<h3> Submit Your Address </h3>
-	<div class="form-group">
-		<input type="text" class="form-control" placeholder="Address" ng-model="title"></input>
-		<input type="text" class="form-control" placeholder="Beds" ng-model="beds"></input>
-		<input type="text" class="form-control" placeholder="Price" ng-model="price"></input>
-		<input type="text" class="form-control" placeholder="Area Code" ng-model="area"></input>
-	</div>
-	<button type="submit" class="btn btn-primary">Add</button>
-</form>
--->
+<h1>{{helloWorld}}</h1>
 
 <!--
 	Input address data to Firebase via controller
 -->
 <h3>Add address details</h3>
 <form ng-submit="addTodo()">
-    <div class="form-group">
-		<input type="text" class="form-control" placeholder="Address" ng-model="address"></input>
-		<input type="text" class="form-control" placeholder="Beds" ng-model="beds"></input>
-		<input type="text" class="form-control" placeholder="Price" ng-model="price"></input>
-		<input type="text" class="form-control" placeholder="Area Code" ng-model="area"></input>
-	</div>
-    <button type="submit" class="btn btn-primary">Add</button>
+   <div class="form-group">
+	<input type="text" class="form-control" placeholder="Address" ng-model="address"></input>
+	<input type="text" class="form-control" placeholder="Beds" ng-model="beds"></input>
+	<input type="text" class="form-control" placeholder="Price" ng-model="price"></input>
+	<input type="text" class="form-control" placeholder="Area Code" ng-model="area"></input>
+   </div>
+   <button type="submit" class="btn btn-primary">Add</button>
 </form>
 
 <!--
@@ -37,7 +21,7 @@
 <form name="myForm">
     <label for="repeatSelect"> Select area code: </label>
     <select name="repeatSelect" id="repeatSelect" ng-model="areas.model">
-      <option ng-repeat="option in areas.availableOptions" value="{{option.id}}">{{option.name}}</option>
+        <option ng-repeat="option in areas.availableOptions" value="{{option.id}}">{{option.name}}</option>
     </select>
 </form>
 
