@@ -10,6 +10,10 @@ app.config(["$routeProvider", "$locationProvider", function($routeProvider, $loc
 		.when('/suggestion/:id',{
 			controller: 'SuggestionController',
 			templateUrl: '/views/suggestion.html'
+		})
+		.when('/map/:id',{
+			controller: 'MapController',
+			templateUrl: '/views/map.html'
 		})	
 		.otherwise({
 			redirectTo: '/'
