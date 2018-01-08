@@ -8,21 +8,21 @@
 <!--
     Display houses in a table from Firebase 
 -->	
-<div >
+<div>
     <table style="width:60%">
-   		  <thead>
-            <tr>
-              	<th>Address:</th>
-              	<th>Bedrooms:</th>
-              	<th>Price:</th>
-            </tr>
+   		<thead>
+           <tr>
+              <th>Address:</th>
+              <th>Bedrooms:</th>
+              <th>Price:</th>
+           </tr>
         </thead>
         <tbody ng-repeat="item in chosenArea">
-          	<tr>
-              	<td>{{item.address}}</td>
-            		<td>{{item.beds}}</td>
-              	<td>{{item.price}}</td>
-            </tr>
+           <tr>
+              <td>{{item.address}}</td>
+              <td>{{item.beds}}</td>
+              <td>{{item.price}}</td>
+           </tr>
        	</tbody>
     </table>       
 </div>
