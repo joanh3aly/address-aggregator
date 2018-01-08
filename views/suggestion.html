@@ -1,56 +1,28 @@
-<h1>{{heading}}</h1> 
+<h1>{{heading}}</h1>
 
 <!--
-	Display houses in a table from suggestions.js - not using anymore
--->	
-<!--
-<div ng-init="houses = listArea()">
-    <table style="width:100%">
-   		<thead>
-        <tr>
-        	<th>Address:</th>
-        	<th>Bedrooms:</th>
-        	<th>Price:</th>
-        </tr>
-        </thead>
-        <tbody ng-repeat="house in houses">
-        	<tr>
-            	<td>{{house.title}}</td>
-          		<td>{{house.beds}}</td>
-            	<td>{{house.price}}</td>
-            </tr>
-       	</tbody>
-    </table>       
-</div>
--->
-
-<!--
-	Display houses in a table from Firebase (version 2)
--->	
-<div >
-    <table style="width:60%">
-   		<thead>
-        <tr>
-        	<th>Address:</th>
-        	<th>Bedrooms:</th>
-        	<th>Price:</th>
-        </tr>
-        </thead>
-        <tbody ng-repeat="item in chosenArea">
-        	<tr>
-            	<td>{{item.address}}</td>
-          		<td>{{item.beds}}</td>
-            	<td>{{item.price}}</td>
-            </tr>
-       	</tbody>
-    </table>       
+   Display houses in a table from Firebase (version 2)
+-->  
+<div>
+   <table style="width:60%">
+      <thead>
+         <tr>
+            <th>Address:</th>
+            <th>Bedrooms:</th>
+            <th>Price:</th>
+         </tr>
+      </thead>
+      <tbody ng-repeat="item in chosenArea">
+         <tr>
+            <td>{{item.address}}</td>
+            <td>{{item.beds}}</td>
+            <td>{{item.price}}</td>
+         </tr>
+      </tbody>
+   </table>
 </div>
 
-
 <!--
-	TODO: have different buttons for displaying list in a different order ..ie by price/ address/ bedrooms
-	https://stackoverflow.com/questions/37331435/dynamically-change-ng-repeat-filter-using-params-from-ui-sref
--->	
+   Link to map
+-->  
 <a href="#/map/{{routeParamsID}}" class="btn btn-primary">Go to map</a>
-
-{{routeParamsID}}
