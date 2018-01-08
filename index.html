@@ -1,59 +1,51 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Address Aggregator</title>
-		<!-- AngularJS -->
-		<script type="text/javascript" src="js/vendor/angular.min.js"></script>
-		<script src="https://code.angularjs.org/1.2.28/angular-route.min.js" type="text/javascript"></script>
-		<script src="js/vendor/toArrayFilter.js"></script>
-		<!-- Firebase -->
-		<script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
-		<!-- AngularFire -->
-		<script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
-		<!-- Bootstrap -->
-		<!--<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">-->
-		<link rel="stylesheet" type="text/css" href="js/vendor/bootstrap-4.0.0-beta.3-dist/css/bootstrap.min.css">
-		<!-- Google Maps -->
-		<script src="https://maps.googleapis.com/maps/api/js?sensor=false&language=en"></script>
-		<link rel="stylesheet" href="css/maps.css">
-	</head>
-	<body ng-app="AddressAggregator">
-
-		<div class="main" ng-controller="HomeController">
-			<div class="container-fluid">
-				<div ng-view></div>
-			</div>
-		</div>
-
-		
-		<!-- Firebase DB Connection --> 
-		<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-		<script>
-		    var config = {
-			    apiKey: "AIzaSyBLL90hGArPWCdDH-_po4xBCa95R_3kDlc",
-			    authDomain: "address-aggregator-1-615d6.firebaseapp.com",
-			    databaseURL: "https://address-aggregator-1-615d6.firebaseio.com",
-			    projectId: "address-aggregator-1-615d6",
-			    storageBucket: "",
-			    messagingSenderId: "442062010396"
-			};
-		    firebase.initializeApp(config);
-		</script>
-
-		<!-- Modules -->
-		<script type="text/javascript" src="js/app.js"></script>
-		 
-		<!-- Controllers -->
-		<script type="text/javascript" src="js/controllers/HomeController.js"></script>
-		<script type="text/javascript" src="js/controllers/SuggestionController.js"></script>
-		<script type="text/javascript" src="js/controllers/MapController.js"></script>
-		<script type="text/javascript" src="js/controllers/maps.js"></script>
-		 
-		<!-- Services -->
-		<script type="text/javascript" src="js/services/suggestions.js"></script>
-
-		<!-- Bootstrap -->
-		<script src="js/vendor/bootstrap-4.0.0-beta.3-dist/js/bootstrap.min.js"></script>
-
-	</body>
+   <head>
+      <title>Address Aggregator</title>
+      <!-- AngularJS -->
+      <script type="text/javascript" src="js/vendor/angular.min.js"></script>
+      <script src="https://code.angularjs.org/1.2.28/angular-route.min.js" type="text/javascript"></script>
+      <script src="js/vendor/toArrayFilter.js"></script>
+      <!-- Firebase -->
+      <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+      <!-- AngularFire -->
+      <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+      <!-- Bootstrap -->
+      <!--<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">-->
+      <link rel="stylesheet" type="text/css" href="js/vendor/bootstrap-4.0.0-beta.3-dist/css/bootstrap.min.css">
+      <!-- Google Maps -->
+      <script src="https://maps.googleapis.com/maps/api/js?sensor=false&language=en"></script>
+      <link rel="stylesheet" href="css/maps.css">
+   </head>
+   <body ng-app="AddressAggregator">
+      <div class="main" ng-controller="HomeController">
+         <div class="container-fluid">
+            <div ng-view></div>
+         </div>
+      </div>
+      <!-- Firebase DB Connection --> 
+      <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+      <script>
+         var config = {
+          apiKey: "AIzaSyBLL90hGArPWCdDH-_po4xBCa95R_3kDlc",
+          authDomain: "address-aggregator-1-615d6.firebaseapp.com",
+          databaseURL: "https://address-aggregator-1-615d6.firebaseio.com",
+          projectId: "address-aggregator-1-615d6",
+          storageBucket: "",
+          messagingSenderId: "442062010396"
+         };
+         firebase.initializeApp(config);
+      </script>
+      <!-- Modules -->
+      <script type="text/javascript" src="js/app.js"></script>
+      <!-- Controllers -->
+      <script type="text/javascript" src="js/controllers/HomeController.js"></script>
+      <script type="text/javascript" src="js/controllers/SuggestionController.js"></script>
+      <script type="text/javascript" src="js/controllers/MapController.js"></script>
+      <script type="text/javascript" src="js/controllers/maps.js"></script>
+      <!-- Services -->
+      <script type="text/javascript" src="js/services/suggestions.js"></script>
+      <!-- Bootstrap -->
+      <script src="js/vendor/bootstrap-4.0.0-beta.3-dist/js/bootstrap.min.js"></script>
+   </body>
 </html>
