@@ -1,38 +1,36 @@
 <h1>{{helloWorld}}</h1>
 
 <!--
-	Input address data to Firebase via controller
+   Input address data to Firebase via controller
 -->
 <h3>Add address details</h3>
 <form ng-submit="addTodo()">
    <div class="form-group">
-	<input type="text" class="form-control" placeholder="Address" ng-model="address"></input>
-	<input type="text" class="form-control" placeholder="Beds" ng-model="beds"></input>
-	<input type="text" class="form-control" placeholder="Price" ng-model="price"></input>
-	<input type="text" class="form-control" placeholder="Area Code" ng-model="area"></input>
+      <input type="text" class="form-control" placeholder="Address" ng-model="address"></input>
+      <input type="text" class="form-control" placeholder="Beds" ng-model="beds"></input>
+      <input type="text" class="form-control" placeholder="Price" ng-model="price"></input>
+      <input type="text" class="form-control" placeholder="Area Code" ng-model="area"></input>
    </div>
    <button type="submit" class="btn btn-primary">Add</button>
 </form>
 
 <!--
-	 Select areas to send to SuggestionController display page
+   Select areas to send to SuggestionController display page
 -->
 <h3>Select an Area</h3>
 <form name="myForm">
-    <label for="repeatSelect"> Select area code: </label>
-    <select name="repeatSelect" id="repeatSelect" ng-model="areas.model">
-        <option ng-repeat="option in areas.availableOptions" value="{{option.id}}">{{option.name}}</option>
-    </select>
+   <label for="repeatSelect"> Select area code: </label>
+   <select name="repeatSelect" id="repeatSelect" ng-model="areas.model">
+      <option ng-repeat="option in areas.availableOptions" value="{{option.id}}">{{option.name}}</option>
+   </select>
 </form>
 
 <!--
-	 Selected area 
+   Selected area 
 -->
 <tt>selected = {{areas.model}}</tt><br/>
+
+<!--
+   Link to area page data display 
+-->
 <a href="#/suggestion/{{areas.model}}" class="btn btn-primary">GO</a>
-
-
-
-
-
-
