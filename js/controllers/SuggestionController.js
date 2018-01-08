@@ -1,7 +1,7 @@
 app.controller('SuggestionController', ['$scope', 'suggestions', '$routeParams', '$firebaseObject', function($scope, suggestions, $routeParams, $firebaseObject) { 
 	$scope.heading = "Dublin " + $routeParams.id;
 	$scope.posts = suggestions.posts;
-
+	$scope.routeParamsID = $routeParams.id;
 /*
 	get static data from suggestions.js service 
 */
@@ -18,7 +18,7 @@ app.controller('SuggestionController', ['$scope', 'suggestions', '$routeParams',
     }
 
 /*
-	get data from Firebase (just a data dump)
+	Connect to Firebase and get data
 */
 	const rootRef = firebase.database().ref();  
 	const ref = rootRef.child('one');
