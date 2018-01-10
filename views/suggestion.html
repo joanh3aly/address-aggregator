@@ -8,14 +8,14 @@
 -->  
 <div>
    <table style="width:60%">
-      <thead>
+      <thead><h4>Order by:</h4>
          <tr>
-            <th>Address:</th>
-            <th>Bedrooms:</th>
-            <th>Price:</th>
+            <th class="thstyle" ng-click="orderByMe('address')"><h4>Address</h4></th>
+            <th class="thstyle" ng-click="orderByMe('beds')"><h4>Bedrooms</h4></th>
+            <th class="thstyle" ng-click="orderByMe('price')"><h4>Price</h4></th>
          </tr>
       </thead>
-      <tbody ng-repeat="item in chosenArea">
+      <tbody ng-repeat="item in chosenArea | orderBy:myOrderBy">
          <tr>
             <td>{{item.address}}</td>
             <td>{{item.beds}}</td>
