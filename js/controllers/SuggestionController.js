@@ -29,7 +29,7 @@ app.controller('SuggestionController', ['$scope', 'suggestions', '$routeParams',
 
 
 /*
-	get dynamic data from Firebase (version 2)
+	get dynamic data from Firebase 
 */
     obj.$loaded().then(function() {
      	var result;
