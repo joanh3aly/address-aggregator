@@ -53,7 +53,15 @@ app.controller('SuggestionController', ['$scope', 'suggestions', '$routeParams',
 		$scope.chosenArea = chosenAreaList;
     });
 
+/*
+    Order by function
+*/
+    $scope.orderByMe = function(x) {
+	$scope.myOrderBy = x;
+    }
+
 }]);
+
 
 
 
